@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link'
 
 function Index() {
   const [date, setDate] = useState([]);
@@ -14,36 +15,11 @@ function Index() {
   return (
     <main>
       <Head>
-        <title>Next.js + Node API</title>
+        <title>Co-learnings</title>
       </Head>
-      <h1>Next.js + Node.js API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://zeit.co/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          ZEIT Now
-        </a>
-        !
-      </h2>
+      <h1>Co-learnings</h1>
       <p>
-        <a
-          href="https://github.com/zeit/now-examples/blob/master/nextjs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
-        <code>/static</code> for static content and <code>/pages</code> which
-        contains content and <code>/api</code>, a serverless{' '}
-        <a href="https://nodejs.org/en/">Node.js</a> function. See{' '}
-        <a href="/pages/api/date.js">
-          <code>api/date.js</code> for the Date API with Node.js
-        </a>
-        .
+        <Link to="/login" />
       </p>
       <br />
       <h2>The date according to Node.js is:</h2>
