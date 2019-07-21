@@ -19,7 +19,7 @@ function Index() {
       </Head>
       <h1>Co-learnings</h1>
       <p>
-        <Link to="/login" />
+        <Link href="/login">Log In</Link>
       </p>
       <br />
       <h2>The date according to Node.js is:</h2>
