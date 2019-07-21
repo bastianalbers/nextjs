@@ -1,17 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import Link from 'next/link'
 
-function Index() {
-  const [date, setDate] = useState([]);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.json();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+function Login() {
   return (
     <main>
       <Head>
@@ -35,4 +25,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Login;
